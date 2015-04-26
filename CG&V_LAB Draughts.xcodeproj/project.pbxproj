@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		840E83DB1AE2A32C0071FDFC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 840E83DA1AE2A32C0071FDFC /* main.cpp */; };
+		840E83E21AE2A3480071FDFC /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840E83E11AE2A3480071FDFC /* GLUT.framework */; };
+		840E83E41AE2A34F0071FDFC /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840E83E31AE2A34F0071FDFC /* OpenGL.framework */; };
+		840E83E71AE2A3640071FDFC /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = 840E83E51AE2A3640071FDFC /* list.c */; };
+		840E83EA1AE2A3AE0071FDFC /* grafix.c in Sources */ = {isa = PBXBuildFile; fileRef = 840E83E81AE2A3AE0071FDFC /* grafix.c */; };
+		840E83ED1AE2A3F10071FDFC /* game.c in Sources */ = {isa = PBXBuildFile; fileRef = 840E83EB1AE2A3F10071FDFC /* game.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +28,14 @@
 
 /* Begin PBXFileReference section */
 		840E83D71AE2A32C0071FDFC /* CG&V_LAB Draughts */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CG&V_LAB Draughts"; sourceTree = BUILT_PRODUCTS_DIR; };
-		840E83DA1AE2A32C0071FDFC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		840E83E11AE2A3480071FDFC /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		840E83E31AE2A34F0071FDFC /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		840E83E51AE2A3640071FDFC /* list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = list.c; sourceTree = "<group>"; };
+		840E83E61AE2A3640071FDFC /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		840E83E81AE2A3AE0071FDFC /* grafix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = grafix.c; sourceTree = "<group>"; };
+		840E83E91AE2A3AE0071FDFC /* grafix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grafix.h; sourceTree = "<group>"; };
+		840E83EB1AE2A3F10071FDFC /* game.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = game.c; path = ../game.c; sourceTree = "<group>"; };
+		840E83EC1AE2A3F10071FDFC /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game.h; path = ../game.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840E83E41AE2A34F0071FDFC /* OpenGL.framework in Frameworks */,
+				840E83E21AE2A3480071FDFC /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +54,8 @@
 		840E83CE1AE2A32C0071FDFC = {
 			isa = PBXGroup;
 			children = (
+				840E83E31AE2A34F0071FDFC /* OpenGL.framework */,
+				840E83E11AE2A3480071FDFC /* GLUT.framework */,
 				840E83D91AE2A32C0071FDFC /* CG&V_LAB Draughts */,
 				840E83D81AE2A32C0071FDFC /* Products */,
 			);
@@ -57,7 +72,12 @@
 		840E83D91AE2A32C0071FDFC /* CG&V_LAB Draughts */ = {
 			isa = PBXGroup;
 			children = (
-				840E83DA1AE2A32C0071FDFC /* main.cpp */,
+				840E83EB1AE2A3F10071FDFC /* game.c */,
+				840E83EC1AE2A3F10071FDFC /* game.h */,
+				840E83E51AE2A3640071FDFC /* list.c */,
+				840E83E81AE2A3AE0071FDFC /* grafix.c */,
+				840E83E91AE2A3AE0071FDFC /* grafix.h */,
+				840E83E61AE2A3640071FDFC /* list.h */,
 			);
 			path = "CG&V_LAB Draughts";
 			sourceTree = "<group>";
@@ -118,7 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840E83DB1AE2A32C0071FDFC /* main.cpp in Sources */,
+				840E83ED1AE2A3F10071FDFC /* game.c in Sources */,
+				840E83E71AE2A3640071FDFC /* list.c in Sources */,
+				840E83EA1AE2A3AE0071FDFC /* grafix.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +224,7 @@
 		840E83DF1AE2A32C0071FDFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_CFLAGS = "-Wno-deprecated";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,6 +232,7 @@
 		840E83E01AE2A32C0071FDFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_CFLAGS = "-Wno-deprecated";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
